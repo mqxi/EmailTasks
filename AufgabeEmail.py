@@ -16,7 +16,7 @@ timeNow = datetime.datetime.now() # date and time for the subject
 sender_email = "" #enter your email 
 receiver_email = "" #enter the receiver email
 #password = input("Type your password and press enter: ")
-datei = open("password.txt",'r') # opens a txt file which contains 
+datei = open("password.txt",'r') # opens a txt file which contains the pw
 password = datei.readline() #read the password
 datei.close # close the file
 
