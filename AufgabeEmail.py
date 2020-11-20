@@ -13,10 +13,10 @@ from email import encoders
 import datetime
 
 timeNow = datetime.datetime.now() # date and time for the subject
-sender_email = "spampythonmx@gmail.com" #enter your email 
-receiver_email = "jmpn470@web.de" #enter the receiver email
+sender_email = "" #enter your email 
+receiver_email = "" #enter the receiver email
 #password = input("Type your password and press enter: ")
-datei = open("PTP.txt",'r') # opens a txt file
+datei = open("password.txt",'r') # opens a txt file which contains 
 password = datei.readline() #read the password
 datei.close # close the file
 
@@ -63,7 +63,7 @@ part2 = MIMEText(html, "html")
 message.attach(part1)
 message.attach(part2)
 
-file = "document.pdf"
+file = "document.pdf" #attachment 
 
 attach_file = open(file, "rb") # open the file
 part3 = MIMEBase("application", "octate-stream")
